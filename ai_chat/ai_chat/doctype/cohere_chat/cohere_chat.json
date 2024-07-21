@@ -1,0 +1,159 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-30 13:08:00.131208",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "history",
+  "section_break_jzen",
+  "user_message",
+  "company",
+  "supplier",
+  "section_break_tafo",
+  "submit",
+  "check_item_description",
+  "column_break_mryp",
+  "clear",
+  "section_break_jmub",
+  "available_items_and_qty",
+  "section_break_iqny",
+  "unavailable_qty",
+  "section_break_groi",
+  "unavailable_item",
+  "amended_from",
+  "section_break_ybwa",
+  "cohere_message_for_user",
+  "cohere_message"
+ ],
+ "fields": [
+  {
+   "fieldname": "history",
+   "fieldtype": "Long Text",
+   "label": "history"
+  },
+  {
+   "fieldname": "section_break_jzen",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "user_message",
+   "fieldtype": "Text",
+   "label": "user_message"
+  },
+  {
+   "fieldname": "section_break_tafo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "submit",
+   "fieldtype": "Button",
+   "label": "submit"
+  },
+  {
+   "fieldname": "clear",
+   "fieldtype": "Button",
+   "label": "clear"
+  },
+  {
+   "fieldname": "column_break_mryp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "section_break_jmub",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "available_items_and_qty",
+   "fieldtype": "Table",
+   "label": "Available Items and Qty",
+   "options": "Available Items and Qty"
+  },
+  {
+   "fieldname": "section_break_iqny",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "unavailable_qty",
+   "fieldtype": "Table",
+   "label": "Unavailable Qty",
+   "options": "Unavailable Qty"
+  },
+  {
+   "fieldname": "section_break_groi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "unavailable_item",
+   "fieldtype": "Table",
+   "label": "Unavailable Item",
+   "options": "Unavailable Item"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "cohere_chat",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_ybwa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cohere_message_for_user",
+   "fieldtype": "Text Editor",
+   "label": "Cohere Message For User"
+  },
+  {
+   "fieldname": "cohere_message",
+   "fieldtype": "Button",
+   "label": "Cohere Message"
+  },
+  {
+   "fieldname": "check_item_description",
+   "fieldtype": "Button",
+   "label": "Check Item Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-18 15:00:05.807453",
+ "modified_by": "Administrator",
+ "module": "Ai Chat",
+ "name": "cohere_chat",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

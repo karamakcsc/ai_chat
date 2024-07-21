@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-21 11:39:42.456628",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "translate_text",
+  "attach_xlsx_file"
+ ],
+ "fields": [
+  {
+   "fieldname": "translate_text",
+   "fieldtype": "Button",
+   "label": "Translate Text"
+  },
+  {
+   "fieldname": "attach_xlsx_file",
+   "fieldtype": "Attach",
+   "label": "Attach Xlsx File"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-21 12:01:20.487048",
+ "modified_by": "Administrator",
+ "module": "Ai Chat",
+ "name": "Migrate-Items-w-Pandas",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

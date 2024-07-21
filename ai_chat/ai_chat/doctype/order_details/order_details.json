@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-30 15:24:44.285773",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "order_type",
+  "customer",
+  "posting_date",
+  "sessions_time_in",
+  "sessions_time_out",
+  "tokens_per_input",
+  "tokens_per_output",
+  "column_break_ceqa",
+  "user_message",
+  "json",
+  "section_break_sszh",
+  "items",
+  "section_break_xmvs",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_xmvs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Order Details",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "order_type",
+   "fieldtype": "Select",
+   "label": "Order Type",
+   "options": "\nNew Order\nEdit Order\nConfirm Order\nCancel Order\nSearch\nOther"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "label": "Customer"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "sessions_time_in",
+   "fieldtype": "Datetime",
+   "label": "Sessions Time In"
+  },
+  {
+   "fieldname": "sessions_time_out",
+   "fieldtype": "Datetime",
+   "label": "Sessions Time Out"
+  },
+  {
+   "fieldname": "user_message",
+   "fieldtype": "Long Text",
+   "label": "User Message"
+  },
+  {
+   "fieldname": "column_break_ceqa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tokens_per_input",
+   "fieldtype": "Float",
+   "label": "Tokens Per Input"
+  },
+  {
+   "fieldname": "tokens_per_output",
+   "fieldtype": "Float",
+   "label": "Tokens Per Output"
+  },
+  {
+   "fieldname": "section_break_sszh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Item Table"
+  },
+  {
+   "fieldname": "json",
+   "fieldtype": "Long Text",
+   "label": "JSON"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-06-30 15:50:06.970525",
+ "modified_by": "Administrator",
+ "module": "Ai Chat",
+ "name": "Order Details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

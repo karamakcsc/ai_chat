@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format",
+ "creation": "2024-07-03 11:10:38.238119",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "document_type",
+  "dynamic_doc",
+  "submit",
+  "commonly_known"
+ ],
+ "fields": [
+  {
+   "fieldname": "commonly_known",
+   "fieldtype": "Long Text",
+   "label": "Commonly Known"
+  },
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Link",
+   "label": "Document Type",
+   "options": "DocType",
+   "unique": 1
+  },
+  {
+   "fieldname": "dynamic_doc",
+   "fieldtype": "Dynamic Link",
+   "label": "Dynamic Doc",
+   "options": "document_type"
+  },
+  {
+   "fieldname": "submit",
+   "fieldtype": "Button",
+   "label": "Submit"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-06 18:02:34.030319",
+ "modified_by": "Administrator",
+ "module": "Ai Chat",
+ "name": "Item Commonly Known",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

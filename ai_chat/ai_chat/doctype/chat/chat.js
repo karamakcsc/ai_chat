@@ -1,5 +1,5 @@
 // Copyright (c) 2024, jibreel abdeen and contributors
-// For license information, please see license.txt
+/// For license information, please see license.txt
 
 frappe.ui.form.on("chat", {
 	refresh(frm) {

@@ -1,11 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "TEST-.####",
  "creation": "2024-07-21 10:54:10.192237",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "check_items_description",
+  "column_break_bjri",
+  "section_break_ovsl",
   "items_table",
   "section_break_6ndt",
   "amended_from"
@@ -35,15 +38,24 @@
    "fieldtype": "Table",
    "label": "Items Table",
    "options": "Items Description Table"
+  },
+  {
+   "fieldname": "column_break_bjri",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ovsl",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-07-21 11:03:36.065010",
+ "modified": "2024-07-23 10:48:14.304294",
  "modified_by": "Administrator",
  "module": "Ai Chat",
  "name": "Generate Items Description",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

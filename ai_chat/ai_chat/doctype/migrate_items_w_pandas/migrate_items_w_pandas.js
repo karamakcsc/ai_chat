@@ -4,17 +4,15 @@
 frappe.ui.form.on("Migrate-Items-w-Pandas", {
     translate_text(frm) {
         frappe.call({
-            method: "frappe.client.submit",
-            args: {
-                doc: frm.doc
-            },
+            doc: frm.doc,
+            method: "translate_text",
             freeze: true,
             freeze_message: 'Translating text...',
             callback: function(r) {
                 if (r.message) {
-                    frappe.msgprint('Translation completed successfully.');
+                    frappe.msgprint(r.message);
                 } else {
-                    frappe.msgprint('Translation failed or returned no message.');
+                    // frappe.msgprint('Translation failed or returned no message.');
                 }
             }
         });
